@@ -65,12 +65,47 @@ current_status_predictor           = life_status[life_state]
 current_battle_condition_predictor = battle_conditions[weapon_state]
 current_turn_predictor             = turn_order[turn_state]
 
-puts "################"
+system("clear")
+
+puts "~~~"
 puts "Current Status"
 puts "Curent Life Status: #{life_state}"
 puts "Current Battle Choice: #{weapon_state}"
 puts "Current Turn: #{turn_state}"
-puts "################"
+puts "~~~"
+
+if    "alive"  == life_state; print "When the current life status is #{life_state}, "
+elsif "dead"   == life_state; print "When the current life status is #{life_state}, "
+elsif "undead" == life_state; print "When the current life status is #{life_state}, "
+end
+
+if    "epee"  == weapon_state; print "factor in the current battle condition of #{weapon_state} "
+elsif "ishi"  == weapon_state; print "factor in the current battle condition of #{weapon_state} "
+elsif "bache" == weapon_state; print "factor in the current battle condition of #{weapon_state} "
+end
+
+if    "player" == turn_state; puts "during the current #{turn_state} turn."
+elsif "spider" == turn_state; puts "during the current #{turn_state} turn."
+elsif "enemy"  == turn_state; puts "during the current #{turn_state} turn."
+end
+
+puts "~~~"
 puts "Next Life Status:   #{current_status_predictor}"
 puts "Next Battle Choice: #{current_battle_condition_predictor}"
 puts "Next Turn:          #{current_turn_predictor}"
+puts "~~~"
+
+if    "alive"  == current_status_predictor; print "When the next life status is #{current_status_predictor}, "
+elsif "dead"   == current_status_predictor; print "When the next life status is #{current_status_predictor}, "
+elsif "undead" == current_status_predictor; print "When the next life status is #{current_status_predictor}, "
+end
+
+if    "epee"  == current_battle_condition_predictor; print "factor in the battle condition of #{current_battle_condition_predictor} "
+elsif "ishi"  == current_battle_condition_predictor; print "factor in the battle condition of #{current_battle_condition_predictor} "
+elsif "bache" == current_battle_condition_predictor; print "factor in the battle condition of #{current_battle_condition_predictor} "
+end
+
+if    "player" == current_turn_predictor; puts "during the #{current_turn_predictor} turn."
+elsif "spider" == current_turn_predictor; puts "during the #{current_turn_predictor} turn."
+elsif "enemy"  == current_turn_predictor; puts "during the #{current_turn_predictor} turn."
+end
