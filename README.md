@@ -1,0 +1,2 @@
+# YumemoireDesignDoc
+Revamped design document.
