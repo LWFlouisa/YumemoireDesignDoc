@@ -5,6 +5,9 @@ You play as an immortal mad scientist whom, with guidance from Yume and Sume, wh
 
 Wil you defend humanity from an invasion of bear-men whom come from the caverns below?
 
+## Meaning Of Title
+Yumemoire is a hybrid compound word that blend Moire ( a type of pattern ) and Yume or "dream", or in this case nightmore.
+
 ## Gameplay
 * A game clock revolving around a simplified lunar calender.
 * Learn new words in a fantasy laguage to solve riddles in an ancient tunge.
